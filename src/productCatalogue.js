@@ -28,5 +28,16 @@ class Catalogue {
     return matches;
   }
 
+  removeProductById(id) {
+    if (this.findProductById(id)) {
+    this.products.splice(id, 1)
+    return true
+  } else {
+    return false
+  }
+}
+
+
+
 }
 module.exports = Catalogue;
