@@ -112,3 +112,21 @@ if (check = result) {
   console.log('\tFailed')
 }
 
+
+
+cat = new Catalogue("Test CheckReorder part 2");
+check = cat.checkReorder()
+result = ({type:'reorder', productIds:['A123','A124','A125']})
+console.log('\t Reorder should work')
+
+cat.addProduct(p123);
+cat.addProduct(p124);
+cat.addProduct(p125);
+
+
+if (check = result) {
+  console.log('\tPassed')
+} else {
+  console.log('\tFailed')
+}
+

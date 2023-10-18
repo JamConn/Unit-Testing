@@ -38,6 +38,13 @@ class Catalogue {
 }
 
 checkReorder() {
+  let reorderList = [];
+  for (let i = 0; i < this.products.length; i++) {
+    if(product.quantityInStock <= product.reorderLevel) {
+      return reorderList.push(product.id)
+    }
+  }
+  return {type:"reorder", productIds:reorderList}
 }
 
 
