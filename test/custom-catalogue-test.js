@@ -93,3 +93,22 @@ if (response === false) {
 } else {
   console.log('\tFailed')
 }
+
+
+
+
+//Exercise 2
+
+cat = new Catalogue("Test CheckReorder part 1");
+check = cat.checkReorder()
+result = { type: 'reorder', productIds: [] }
+console.log('Testing checkReorder Exercise 2')
+console.log('\t Nothing to be reordered')
+cat.addProduct(p123);
+
+if (check = result) {
+  console.log('\tPassed')
+} else {
+  console.log('\tFailed')
+}
+
